@@ -6,14 +6,28 @@ public class Alumno extends Personas implements Mostrar {
     private int edad;
     private final ArrayList<Matricula> matriculas;
 
+    /**
+     *
+     * @param nombre
+     * @param edad
+     */
     public Alumno(String nombre, int edad) {
         super(nombre,edad);
         this.matriculas = new ArrayList<>();
     }
 
+    /**
+     *
+     * @param m matricular a alumno
+     */
+
     public void matricular(Matricula m) {
         matriculas.add(m);
     }
+
+    /**
+     * metodo mostrar
+     */
 
     @Override
     public void mostrar() {
@@ -25,6 +39,11 @@ public class Alumno extends Personas implements Mostrar {
                     " Nota: " + m.nota);
         }
     }
+
+    /**
+     *
+     * @return media alumno
+     */
 
     public double calcularMedia() {
         double suma = 0;

@@ -17,4 +17,21 @@ public class Matricula extends GestorMatriculas implements Mostrar {
                 asignatura.nombre + " - " +
                 profesor.nombre + " - Nota: " + nota);
     }
+
+    public Alumno getAlumno() {
+        return alumno;
+    }
+
+    public Asignatura getAsignatura() {
+        return asignatura;
+    }
+
+    public Profesor getProfesor() {
+        return profesor;
+    }
+
+    public double getNota() {
+        return nota;
+    }
 }
+

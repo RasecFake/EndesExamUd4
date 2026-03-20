@@ -37,12 +37,8 @@ public class Alumno extends Personas implements Mostrar {
 
         return suma / matriculas.size();
     }
-
+    @Override
     public int getEdad() {
         return edad;
-    }
-
-    public void setEdad(int edad) {
-        this.edad = edad;
     }
 }

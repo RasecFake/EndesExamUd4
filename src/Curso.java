@@ -42,4 +42,20 @@ public class Curso implements Mostrar {
             System.out.println("Profesor: " + p.nombre);
         }
     }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public ArrayList<Alumno> getAlumnos() {
+        return alumnos;
+    }
+
+    public ArrayList<Asignatura> getAsignaturas() {
+        return asignaturas;
+    }
+
+    public ArrayList<Profesor> getProfesores() {
+        return profesores;
+    }
 }

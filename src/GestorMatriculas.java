@@ -14,6 +14,7 @@ public class GestorMatriculas {
             nota = 0;
         }
 
+
         Matricula m = new Matricula(a, as, p, nota);
 
         matriculas.add(m);

@@ -23,4 +23,5 @@ public class Personas {
     public void setEdad(int edad) {
         this.edad = edad;
     }
+
 }

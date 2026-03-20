@@ -6,4 +6,7 @@ public class Asignatura {
         this.nombre = nombre;
     }
 
+    public String getNombre() {
+        return nombre;
+    }
 }

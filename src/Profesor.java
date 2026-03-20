@@ -11,7 +11,22 @@ public class Profesor extends Personas implements Mostrar {
     }
 
     @Override
+    public String getNombre() {
+        return nombre;
+    }
+
+    @Override
+    public int getEdad() {
+        return edad;
+    }
+
+    public String getEspecialidad() {
+        return especialidad;
+    }
+
+    @Override
     public void mostrar() {
         System.out.println("Profesor: " + nombre + " - " + especialidad);
     }
 }
+

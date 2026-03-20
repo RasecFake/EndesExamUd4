@@ -1,10 +1,10 @@
 import java.util.ArrayList;
 
-public class Alumno extends Personas {
+public class Alumno extends Personas implements Mostrar {
 
     protected String nombre;
     private int edad;
-    private ArrayList<Matricula> matriculas;
+    private final ArrayList<Matricula> matriculas;
 
     public Alumno(String nombre, int edad) {
         super(nombre,edad);
@@ -15,7 +15,8 @@ public class Alumno extends Personas {
         matriculas.add(m);
     }
 
-    public void mostrarDatos() {
+    @Override
+    public void mostrar() {
         System.out.println("Alumno: " + nombre);
 
         for (Matricula m : matriculas) {

@@ -1,4 +1,4 @@
-public class Matricula extends GestorMatriculas {
+public class Matricula extends GestorMatriculas implements Mostrar {
 
     protected Alumno alumno;
     protected Asignatura asignatura;
@@ -11,7 +11,7 @@ public class Matricula extends GestorMatriculas {
         this.profesor = profesor;
         this.nota = nota;
     }
-
+    @Override
     public void mostrar() {
         System.out.println(alumno.nombre + " - " +
                 asignatura.nombre + " - " +

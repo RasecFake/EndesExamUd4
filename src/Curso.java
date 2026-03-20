@@ -1,10 +1,10 @@
 import java.util.ArrayList;
 
-public class Curso {
+public class Curso implements Mostrar {
 
-    private String nombre;
-    private ArrayList<Alumno> alumnos;
-    private ArrayList<Asignatura> asignaturas;
+    private final String nombre;
+    private final ArrayList<Alumno> alumnos;
+    private final ArrayList<Asignatura> asignaturas;
     public ArrayList<Profesor> profesores;
 
     public Curso(String nombre) {
@@ -26,7 +26,8 @@ public class Curso {
         profesores.add(p);
     }
 
-    public void mostrarTodo() {
+    @Override
+    public void mostrar() {
         System.out.println("CURSO: " + nombre);
 
         for (Alumno a : alumnos) {

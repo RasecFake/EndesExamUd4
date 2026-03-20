@@ -26,7 +26,7 @@ public class Main {
         gestor.crearMatricula(a1, as2, p2, 4);
         gestor.crearMatricula(a2, as1, p1, 9);
 
-        curso.mostrarTodo();
+        curso.mostrar();
 
         System.out.println("------ MATRÍCULAS ------");
         gestor.mostrarTodas();

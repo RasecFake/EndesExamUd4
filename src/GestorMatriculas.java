@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class GestorMatriculas {
 
-    private ArrayList<Matricula> matriculas;
+    private final ArrayList<Matricula> matriculas;
 
     protected GestorMatriculas() {
         matriculas = new ArrayList<>();
@@ -31,7 +31,6 @@ public class GestorMatriculas {
             );
         }
     }
-
     public void mostrarAprobados() {
         for (Matricula m : matriculas) {
             if (m.nota >= 5) {

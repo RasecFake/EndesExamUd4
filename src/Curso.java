@@ -5,7 +5,7 @@ public class Curso {
     private String nombre;
     private ArrayList<Alumno> alumnos;
     private ArrayList<Asignatura> asignaturas;
-    private ArrayList<Profesor> profesores;
+    public ArrayList<Profesor> profesores;
 
     public Curso(String nombre) {
         this.nombre = nombre;

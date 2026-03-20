@@ -1,14 +1,13 @@
 import java.util.ArrayList;
 
-public class Alumno {
+public class Alumno extends Personas {
 
     protected String nombre;
     private int edad;
     private ArrayList<Matricula> matriculas;
 
     public Alumno(String nombre, int edad) {
-        this.nombre = nombre;
-        this.edad = edad;
+        super(nombre,edad);
         this.matriculas = new ArrayList<>();
     }
 
@@ -33,8 +32,16 @@ public class Alumno {
             suma += m.nota;
         }
 
-        if (matriculas.size() == 0) return 0;
+        if (matriculas.isEmpty()) return 0;
 
         return suma / matriculas.size();
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
     }
 }

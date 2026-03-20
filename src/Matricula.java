@@ -1,4 +1,4 @@
-public class Matricula {
+public class Matricula extends GestorMatriculas {
 
     protected Alumno alumno;
     protected Asignatura asignatura;

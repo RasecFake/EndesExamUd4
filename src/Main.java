@@ -7,8 +7,8 @@ public class Main {
         Alumno a1 = new Alumno("Carlos", 20);
         Alumno a2 = new Alumno("Ana", 22);
 
-        Profesor p1 = new Profesor("Juan", "Matematicas");
-        Profesor p2 = new Profesor("Laura", "Programacion");
+        Profesor p1 = new Profesor("Juan",56,"Matematicas");
+        Profesor p2 = new Profesor("Laura", 43,"Programacion");
 
         Asignatura as1 = new Asignatura("Matematicas");
         Asignatura as2 = new Asignatura("Programacion");

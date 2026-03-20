@@ -57,7 +57,7 @@ public class GestorMatriculas {
             suma += m.nota;
         }
 
-        if (matriculas.size() == 0) return 0;
+        if (matriculas.isEmpty()) return 0;
 
         return suma / matriculas.size();
     }

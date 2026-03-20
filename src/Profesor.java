@@ -1,10 +1,11 @@
-public class Profesor {
+public class Profesor extends Personas {
 
     protected String nombre;
+    protected int edad;
     private String especialidad;
 
-    public Profesor(String nombre, String especialidad) {
-        this.nombre = nombre;
+    public Profesor(String nombre, int edad, String especialidad) {
+        super(nombre,edad);
         this.especialidad = especialidad;
     }
 

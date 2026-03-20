@@ -6,6 +6,7 @@ public class Alumno extends Personas implements Mostrar {
     private int edad;
     private final ArrayList<Matricula> matriculas;
 
+
     /**
      *
      * @param nombre

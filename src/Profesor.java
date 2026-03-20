@@ -1,7 +1,7 @@
 public class Profesor {
 
-    public String nombre;
-    public String especialidad;
+    protected String nombre;
+    private String especialidad;
 
     public Profesor(String nombre, String especialidad) {
         this.nombre = nombre;
